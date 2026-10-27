@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Troubleshoot camera controls, OBS preview, Stream Deck integration and app updates. Report issues without sharing private credentials.">
+<meta name="theme-color" content="#111313">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Support — Osmo Webcam">
+<meta property="og:description" content="Troubleshoot camera controls, OBS preview, Stream Deck integration and app updates. Report issues without sharing private credentials.">
+<meta property="og:url" content="https://cokser.github.io/osmo-webcam-releases/support.html">
+<meta property="og:image" content="https://cokser.github.io/osmo-webcam-releases/assets/osmo-webcam.png">
+<link rel="canonical" href="https://cokser.github.io/osmo-webcam-releases/support.html">
+<link rel="icon" type="image/png" href="assets/osmo-webcam.png">
+<link rel="stylesheet" href="style.css">
+<title>Support — Osmo Webcam</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="siteHeader"><a class="brand" href="index.html"><img src="assets/osmo-webcam.png" width="40" height="40" alt=""><span>Osmo Webcam</span></a><nav aria-label="Main navigation"><a href="index.html#downloads">Downloads</a><a href="setup.html">Setup</a><a href="support.html">Support</a><a href="https://github.com/Cokser/osmo-webcam-releases">GitHub <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main" class="article">
+<p class="eyebrow">SUPPORT</p><h1>Let’s get your view back.</h1><p class="pageLead">Check these common fixes, or send a reproducible issue with the details below.</p><div class="actions"><a class="button primary" href="https://github.com/Cokser/osmo-webcam-releases/issues/new">Report an issue <span aria-hidden="true">↗</span></a><a class="button secondary" href="https://github.com/Cokser/osmo-webcam-releases/issues">Browse known issues</a></div>
+<h2>Controls are unavailable</h2><p>Check USB connection, target firmware and your fixed setup. Turn tracking off, leave the camera stationary and confirm the reference in Settings. A reconnect, fault or update requires confirmation; Stream Deck cannot do this for you. If the position is outside the native control range, use the camera’s joystick to move inward before retrying.</p>
+<h2>The preview is missing</h2><p>Select the physical camera in OBS and start OBS Virtual Camera. Choose that virtual source in Osmo Webcam and enable preview. Check macOS camera permission for Osmo Webcam. Keep the direct USB video source in OBS.</p>
+<h2>A Stream Deck button does nothing</h2><p>Keep the desktop app running, confirm/Arm the correct setup, and check the plugin’s pairing status. A slot with no saved preset is intentionally a no-op. A pinned preset ID must belong to the configured camera/setup. After revoking a client, create and pair a new dedicated Control token.</p><p>For HTTP actions, check that the optional bridge is running and use the method, URL and header shown in the app’s Integrations guide. These credentials differ from direct API client tokens.</p>
+<h2>An update was interrupted</h2><p>Open the installed app and follow recovery. Preserve saved state and local diagnostics. Do not delete lock files or replace app bundles while recovery is running. If recovery cannot continue, report its visible error code.</p>
+<h2>What to include in a report</h2><ul><li>App and plugin versions, macOS version and Mac architecture.</li><li>Camera model and firmware version, checked on the camera.</li><li>The steps taken, expected result, actual result and visible error code.</li><li>A cropped screenshot if it helps explain the problem.</li></ul><aside class="callout"><strong>Issues are public.</strong><p>Remove tokens, HTTP keys, USB identifiers, personal setup names, private recordings and unrelated screen content. Reveal Diagnostics opens local files; it does not upload them. Review and redact any excerpt yourself.</p></aside>
+<h2>Preview scope</h2><p>The first preview targets Apple Silicon, macOS 26+ and standard Pocket 4 firmware 01.03.14.04. Battery telemetry and additional platforms are not included. Arrival, immediate physical stop, wider-range behavior and release qualification have limits; consult the notes attached to the exact release you install.</p>
+</main>
+<footer class="siteFooter"><div><a class="footerBrand" href="index.html">Osmo Webcam</a><p>Local camera control. Your saved views.</p></div><div class="footerLinks"><a href="privacy.html">Privacy</a><a href="LICENSE.txt">Preview license</a><a href="third-party.html">Third-party notices</a></div><p class="finePrint">Independent software. Not affiliated with or endorsed by DJI, Elgato or OBS. Camera hardware, OBS and Stream Deck software are provided separately.</p></footer>
+</body>
+</html>

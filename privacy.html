@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="How Osmo Webcam stores presets and credentials locally, uses OBS preview, and checks GitHub for updates.">
+<meta name="theme-color" content="#111313">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy — Osmo Webcam">
+<meta property="og:description" content="How Osmo Webcam stores presets and credentials locally, uses OBS preview, and checks GitHub for updates.">
+<meta property="og:url" content="https://cokser.github.io/osmo-webcam-releases/privacy.html">
+<meta property="og:image" content="https://cokser.github.io/osmo-webcam-releases/assets/osmo-webcam.png">
+<link rel="canonical" href="https://cokser.github.io/osmo-webcam-releases/privacy.html">
+<link rel="icon" type="image/png" href="assets/osmo-webcam.png">
+<link rel="stylesheet" href="style.css">
+<title>Privacy — Osmo Webcam</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="siteHeader"><a class="brand" href="index.html"><img src="assets/osmo-webcam.png" width="40" height="40" alt=""><span>Osmo Webcam</span></a><nav aria-label="Main navigation"><a href="index.html#downloads">Downloads</a><a href="setup.html">Setup</a><a href="support.html">Support</a><a href="https://github.com/Cokser/osmo-webcam-releases">GitHub <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main" class="article">
+<p class="eyebrow">PRIVACY</p><h1>Your views stay local.</h1><p class="pageLead">No app account, cloud preset storage, advertising or automatic telemetry/crash uploads.</p>
+<h2>Local settings and credentials</h2><p>Camera/setup identifiers, presets, settings, API client records and bounded diagnostics are stored in your macOS user account. The Stream Deck plugin talks to the loopback API on the same Mac. Its dedicated token is stored in an owner-only credential file, outside action settings and shared profiles.</p><p>Revoke a client in the app to remove its access. Use Forget token in the plugin to delete its local copy.</p>
+<h2>Camera preview</h2><p>OBS owns the physical camera’s USB video. Osmo Webcam displays the selected OBS Virtual Camera preview locally and does not upload preview frames. macOS camera permission is used for this preview.</p>
+<h2>Updates and this website</h2><p>Update checks contact GitHub Pages. Downloads contact GitHub and its asset hosts. These services receive normal network metadata, such as IP address. macOS may contact Apple for code-signing or notarization checks. Automatic app update checks/downloads can be disabled in App Updates.</p><p>This site is hosted on GitHub Pages. It has no added analytics, advertising, third-party fonts or tracking scripts.</p>
+<h2>Diagnostics and support</h2><p>Reveal Diagnostics opens local logs and sends nothing. Review files before sharing excerpts: logs can contain device identifiers, paths and setup names. Public GitHub issue reports are public. Do not post credentials or raw diagnostic folders.</p>
+<h2>Deleting local data</h2><p>Removing the app does not erase saved state. For compatibility with earlier installations, data remains under <code>~/Library/Application Support/Pocket Control/</code>, logs under <code>~/Library/Logs/Pocket Control/</code> and update downloads under <code>~/Library/Caches/Pocket Control/</code>. Plugin credentials use the <code>StreamDeckPlugin</code> subfolder in Application Support.</p><p>Quit the app and any optional HTTP bridge before intentionally removing those folders. This erases the associated presets, settings and credentials; keep a backup if you need them.</p>
+</main>
+<footer class="siteFooter"><div><a class="footerBrand" href="index.html">Osmo Webcam</a><p>Local camera control. Your saved views.</p></div><div class="footerLinks"><a href="privacy.html">Privacy</a><a href="LICENSE.txt">Preview license</a><a href="third-party.html">Third-party notices</a></div><p class="finePrint">Independent software. Not affiliated with or endorsed by DJI, Elgato or OBS. Camera hardware, OBS and Stream Deck software are provided separately.</p></footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Set up USB camera controls, OBS preview, saved presets, Stream Deck and local HTTP integrations.">
+<meta name="theme-color" content="#111313">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Set up Osmo Webcam">
+<meta property="og:description" content="Set up USB camera controls, OBS preview, saved presets, Stream Deck and local HTTP integrations.">
+<meta property="og:url" content="https://cokser.github.io/osmo-webcam-releases/setup.html">
+<meta property="og:image" content="https://cokser.github.io/osmo-webcam-releases/assets/osmo-webcam.png">
+<link rel="canonical" href="https://cokser.github.io/osmo-webcam-releases/setup.html">
+<link rel="icon" type="image/png" href="assets/osmo-webcam.png">
+<link rel="stylesheet" href="style.css">
+<title>Set up Osmo Webcam</title>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="siteHeader"><a class="brand" href="index.html"><img src="assets/osmo-webcam.png" width="40" height="40" alt=""><span>Osmo Webcam</span></a><nav aria-label="Main navigation"><a href="index.html#downloads">Downloads</a><a href="setup.html">Setup</a><a href="support.html">Support</a><a href="https://github.com/Cokser/osmo-webcam-releases">GitHub <span aria-hidden="true">↗</span></a></nav></header>
+<main id="main" class="article">
+<p class="eyebrow">SETUP GUIDE</p><h1>Start with a clear view.</h1><p class="pageLead">Connect your camera, confirm a fixed setup, then save the views you use.</p><aside class="callout"><strong>Public downloads are not available yet.</strong><p>This guide describes the intended public-preview workflow. Get release availability from the <a href="index.html#downloads">downloads page</a>; check each release’s compatibility notes before installing.</p></aside>
+<h2>1. Install the desktop app</h2><p>When a public installer is available, download the DMG from the official releases page. Open Osmo Webcam and choose <strong>Install for This User</strong>. The app installs in <code>~/Applications/Osmo Webcam.app</code>. Subsequent updates use <strong>App Updates → Update &amp; Restart</strong>.</p><p>If you have the earlier Pocket Control development app, quit it and move its app bundle to Trash before running the new installer. Keep your private data folders intact. Existing presets and credentials use the same storage.</p>
+<h2>2. Connect USB video and preview</h2><ol><li>Connect a standard Pocket 4 by USB in webcam mode. The first preview targets Apple Silicon, macOS 26+ and firmware 01.03.14.04.</li><li>Keep the physical camera selected in OBS. Start <strong>OBS Virtual Camera</strong>.</li><li>Select OBS Virtual Camera in Osmo Webcam and enable preview. Grant macOS camera permission for the local preview when requested.</li></ol>
+<h2>3. Confirm the fixed setup</h2><ol><li>Open Settings and disconnect control before configuring the camera.</li><li>Select the discovered device, enter the firmware checked on the camera, and name your fixed setup.</li><li>Review a clear pan/tilt window for your mount. Saving a setup does not start movement.</li><li>Turn tracking off, leave the camera stationary, confirm its reference and Arm. New setups use the conservative profile; faster experimental profiles require review.</li></ol><p>Keep a clear path throughout the selected window. Reported positions do not prove physical clearance, arrival or immediate stop.</p>
+<h2>4. Save your first preset</h2><p>Set the view and raw zoom, then choose the always-first <strong>Add Preset</strong> card. Enter a name and transition. Each camera can hold twenty presets. Recall returns to a saved view; selecting another preset replaces an ongoing transition.</p>
+<h2 id="stream-deck">Stream Deck</h2><ol><li>Use Stream Deck 6.6 or later. Once released, install the compatible companion <code>.streamDeckPlugin</code> from official downloads or the app’s bundled installer.</li><li>Open <strong>Osmo Webcam → Integrations → Stream Deck</strong>. Create a dedicated Control token and choose <strong>Copy token</strong>.</li><li>Paste it once into an Osmo Webcam action’s property inspector and choose <strong>Pair</strong>. Tokens are stored outside shared action/profile settings.</li><li>Add Recall Preset actions. Bind a preset by ID to follow it through reordering, or use slots 1–20 to follow collection order. Empty slots do nothing.</li><li>Add Stop, Pan / Tilt, Zoom or reviewed Recenter actions. Hold movement keys and release to stop scheduling. The plugin cannot Arm the camera.</li></ol><p>Revoke the client in the app to remove access. <strong>Forget token</strong> removes the plugin’s local credential. The plugin’s direct installer is updated separately from the app.</p>
+<h2 id="http">Other local software</h2><p>Open <strong>Integrations → HTTP requests</strong> for copy buttons covering request URLs, method, headers, bodies and complete curl examples. The optional local HTTP bridge exposes twenty preset slots and handles the recall lease. It is a separate service; opening the guide does not install or start it.</p><p>For direct API v1 access, the guide can create a named client and copy status, preset and Stop examples. Readiness, reference checks and motion leases still apply. Keep credentials private; never put them in a URL or shared profile.</p>
+<h2>Updates, recovery and quitting</h2><p>The app can check and download updates automatically. Installing requires <strong>Update &amp; Restart</strong>. Updates preserve saved state and reopen disarmed. If installation is interrupted, reopen the installed app and follow recovery; do not start extra app copies or remove lock files.</p><p>Setup memory is optional. It applies after a clean Quit with the same USB session, fixed setup and app build. Reconnects, faults and updates require confirmation. Interrupted movement is never replayed.</p><p>Closing the window leaves the local agent running. Choose <strong>Quit Osmo Webcam</strong> to stop the agent. <a href="support.html">Get help with setup or recovery →</a></p>
+</main>
+<footer class="siteFooter"><div><a class="footerBrand" href="index.html">Osmo Webcam</a><p>Local camera control. Your saved views.</p></div><div class="footerLinks"><a href="privacy.html">Privacy</a><a href="LICENSE.txt">Preview license</a><a href="third-party.html">Third-party notices</a></div><p class="finePrint">Independent software. Not affiliated with or endorsed by DJI, Elgato or OBS. Camera hardware, OBS and Stream Deck software are provided separately.</p></footer>
+</body>
+</html>
