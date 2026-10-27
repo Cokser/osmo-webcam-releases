@@ -1,0 +1,17 @@
+Osmo Webcam — free public preview
+Copyright (c) 2026 Osmo Webcam contributors. All rights reserved.
+
+Permission is granted to install and use unmodified official preview binaries
+for personal and commercial use, without a license fee. This permission does
+not grant rights to redistribute, sell, modify or publish the proprietary source
+or binaries. No purchase, subscription or account is required for this preview.
+
+The preview is experimental and supplied AS IS, without warranty of any kind,
+including merchantability, fitness for a particular purpose or noninfringement.
+To the extent permitted by law, the authors are not liable for damages arising
+from use. Nothing here limits rights that cannot legally be excluded.
+
+Third-party components retain their own licenses; their notices and any rights
+those licenses grant are unaffected. See the Licenses folder in the app and the
+licenses folder in the Stream Deck plugin. DJI, OBS and Elgato are third-party
+trademarks; this project is independent and is not endorsed by those companies.
