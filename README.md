@@ -4,7 +4,7 @@
 
 **Your camera. Your point of view.**
 
-USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles you use and recall them from the desktop app, Stream Deck or other local software. OBS keeps your direct USB video.
+USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles you use and recall them from the desktop app, Stream Deck or other local software. Controls and direct USB preview work without OBS; OBS Virtual Camera remains optional.
 
 [**Downloads & release availability**](https://cokser.github.io/osmo-webcam-releases/#downloads) · [Setup guide](https://cokser.github.io/osmo-webcam-releases/setup.html) · [Support](https://cokser.github.io/osmo-webcam-releases/support.html) · [Release history](https://github.com/Cokser/osmo-webcam-releases/releases)
 
@@ -12,8 +12,8 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 
 - Save up to twenty named pan/tilt/zoom presets per camera, with grid and list layouts.
 - Choose transitions and replace an ongoing recall with your next selection.
-- Adjust pan, tilt and zoom, use Stop, and use guarded Recenter for a reviewed setup.
-- Use the companion Stream Deck plugin for live preset discovery, slots 1–20 and individual controls. Empty slots are no-ops.
+- Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter for a reviewed setup.
+- Use the companion Stream Deck plugin for automatic local pairing, an actual-preset dropdown and individual hold controls. HTTP integrations can use twenty preset slots; empty slots are no-ops.
 - Connect other local software through the optional HTTP preset bridge or API v1. The app’s Integrations page has instructions and copy buttons.
 - Keep presets and credentials on your Mac, without an app account or cloud preset storage.
 
@@ -23,7 +23,7 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 | --- | --- |
 | Mac | Apple Silicon, macOS 26 or later |
 | Camera | Standard DJI Osmo Pocket 4, firmware 01.03.14.04 |
-| Video | Direct USB capture in OBS; OBS Virtual Camera for the optional app preview |
+| Video | Pocket USB preview without OBS, or optional OBS Virtual Camera |
 | Stream Deck | Optional companion plugin; Stream Deck 6.6 or later |
 
 Intel Macs, older macOS, Windows, Linux, other cameras and other firmware versions are not supported by this build. Camera hardware, OBS and Stream Deck software are provided separately. The companion plugin is distributed directly; do not assume Marketplace availability.
@@ -33,11 +33,11 @@ Intel Macs, older macOS, Windows, Linux, other cameras and other firmware versio
 Check the [downloads page](https://cokser.github.io/osmo-webcam-releases/#downloads) for public release availability. Published releases include versioned app/plugin installers, release notes and SHA-256 checksums. Local development builds are separate from public releases.
 
 1. Download the official app installer when available and choose **Install for This User**. The app lives in `~/Applications/Osmo Webcam.app`.
-2. Connect the Pocket 4 over USB in webcam mode. Keep video in OBS, then enable OBS Virtual Camera for the app preview.
+2. Connect the Pocket 4 over USB in webcam mode. Choose Pocket camera · USB and enable preview, or select OBS Virtual Camera if OBS is capturing video.
 3. Confirm a stationary, fixed setup with tracking off and a clear motion window before enabling controls.
-4. Capture a view with **Add Preset**. Open **Integrations** for Stream Deck pairing and local HTTP examples.
+4. Capture your framing with **Add Preset**. Open **Integrations** for Stream Deck pairing and local HTTP examples.
 
-The preview is experimental. Read the compatibility and qualification notes for the exact release you install. Camera readback and completed requests do not establish physical arrival or immediate motor stop. Stop cancels further scheduling; a finite command already accepted by the camera may finish. Interrupted movement is never replayed.
+DJI ActiveTrack control and battery telemetry are not included. The preview is experimental. Read the compatibility and qualification notes for the exact release you install. Camera readback and completed requests do not establish physical arrival or immediate motor stop. Stop cancels further scheduling; a finite command already accepted by the camera may finish. Interrupted movement is never replayed.
 
 ## Updates and help
 
