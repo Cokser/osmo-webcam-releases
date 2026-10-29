@@ -41,7 +41,7 @@ DJI ActiveTrack control and battery telemetry are not included. The preview is e
 
 ## Updates and help
 
-Use **App Updates → Update & Restart** for an installed app. Recovery checks saved state before reopening with controls disarmed. Update the Stream Deck plugin separately with its compatible installer.
+Use **About → Update & Restart** for an installed app. Recovery checks saved state before reopening with controls disarmed. Update the Stream Deck plugin separately with its compatible installer.
 
 [Report an issue](https://github.com/Cokser/osmo-webcam-releases/issues/new) with app/plugin versions, macOS, camera firmware, reproduction steps and the visible error code. Issues are public: remove tokens, HTTP keys, device identifiers and private recordings. **Reveal Diagnostics** opens local files and does not upload them.
 
