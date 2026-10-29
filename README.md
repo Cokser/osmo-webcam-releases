@@ -12,7 +12,7 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 
 - Save up to twenty named pan/tilt/zoom presets per camera, with grid and list layouts.
 - Choose transitions and replace an ongoing recall with your next selection.
-- Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter for a reviewed setup.
+- Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter.
 - Use the companion Stream Deck plugin for automatic local pairing, an actual-preset dropdown and individual hold controls. HTTP integrations can use twenty preset slots; empty slots are no-ops.
 - Connect other local software through the optional HTTP preset bridge or API v1. The app’s Integrations page has instructions and copy buttons.
 - Keep presets and credentials on your Mac, without an app account or cloud preset storage.
@@ -32,16 +32,16 @@ Intel Macs, older macOS, Windows, Linux, other cameras and other firmware versio
 
 Check the [downloads page](https://cokser.github.io/osmo-webcam-releases/#downloads) for public release availability. Published releases include versioned app/plugin installers, release notes and SHA-256 checksums. Local development builds are separate from public releases.
 
-1. Download the official app installer when available and choose **Install for This User**. The app lives in `~/Applications/Osmo Webcam.app`.
+1. Download the official app installer and choose **Install for This User**. The app lives in `~/Applications/Osmo Webcam.app`.
 2. Connect the Pocket 4 over USB in webcam mode. Choose Pocket camera · USB and enable preview, or select OBS Virtual Camera if OBS is capturing video.
-3. Confirm a stationary, fixed setup with tracking off and a clear motion window before enabling controls.
+3. Controls prepare automatically after connection, restart and reconnection. Keep tracking off and a clear movement path.
 4. Capture your framing with **Add Preset**. Open **Integrations** for Stream Deck pairing and local HTTP examples.
 
 DJI ActiveTrack control and battery telemetry are not included. Some motion features remain experimental. Read the compatibility and qualification notes for the exact release you install. Camera readback and completed requests do not establish physical arrival or immediate motor stop. Stop cancels further scheduling; a finite command already accepted by the camera may finish. Interrupted movement is never replayed.
 
 ## Updates and help
 
-Use **About → Update & Restart** for an installed app. Recovery checks saved state before reopening with controls disarmed. Update the Stream Deck plugin separately with its compatible installer.
+Use **About → Update & Restart** for an installed app. Recovery checks saved state before reopening and preparing controls automatically. Update the Stream Deck plugin separately with its compatible installer.
 
 [Report an issue](https://github.com/Cokser/osmo-webcam-releases/issues/new) with app/plugin versions, macOS, camera firmware, reproduction steps and the visible error code. Issues are public: remove tokens, HTTP keys, device identifiers and private recordings. **Reveal Diagnostics** opens local files and does not upload them.
 
