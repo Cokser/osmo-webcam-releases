@@ -13,6 +13,8 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 - Save up to twenty named pan/tilt/zoom presets per camera, with grid and list layouts.
 - Choose transitions and replace an ongoing recall with your next selection.
 - Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter.
+- Hold W/A/S/D and Q/E/Z/X to move while the app is focused; use ↑/↓ for zoom and release to stop scheduling.
+- Choose preview quality and FPS from the source’s advertised modes, including native 4K where available. Preview off keeps those settings read-only while Ready controls remain available.
 - Use the companion Stream Deck plugin for automatic local pairing, an actual-preset dropdown and individual hold controls. HTTP integrations can use twenty preset slots; empty slots are no-ops.
 - Connect other local software through the optional HTTP preset bridge or API v1. The app’s Integrations page has instructions and copy buttons.
 - Keep presets and credentials on your Mac, without an app account or cloud preset storage.
