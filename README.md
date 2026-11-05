@@ -12,6 +12,7 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 
 - Save up to twenty named pan/tilt/zoom presets per camera, with grid and list layouts.
 - Choose transitions and replace an ongoing recall with your next selection.
+- Use optional experimental Mac face tracking on the live preview, with an icon-led On/Off toggle and manual/preset priority. Save that tracking state in presets and preserve it through duplicate/export/import.
 - Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter.
 - Hold W/A/S/D and Q/E/Z/X to move while the app is focused; use ↑/↓ for zoom and release to stop scheduling.
 - Choose preview quality and FPS from the source’s advertised modes, including native 4K where available. Preview off keeps those settings read-only while Ready controls remain available.
@@ -36,10 +37,10 @@ Check the [downloads page](https://cokser.github.io/osmo-webcam-releases/#downlo
 
 1. Download the official app installer and choose **Install for This User**. The app lives in `~/Applications/Osmo Webcam.app`.
 2. Connect the Pocket 4 over USB in webcam mode. Choose Pocket camera · USB and enable preview, or select OBS Virtual Camera if OBS is capturing video.
-3. Controls prepare automatically after connection, restart and reconnection. Keep tracking off and a clear movement path.
+3. Controls prepare automatically after connection, restart and reconnection. Keep DJI ActiveTrack off on the camera and a clear movement path.
 4. Capture your framing with **Add Preset**. Open **Integrations** for Stream Deck pairing and local HTTP examples.
 
-DJI ActiveTrack control and battery telemetry are not included. Some motion features remain experimental. Read the compatibility and qualification notes for the exact release you install. Camera readback and completed requests do not establish physical arrival or immediate motor stop. Stop cancels further scheduling; a finite command already accepted by the camera may finish. Interrupted movement is never replayed.
+Native DJI ActiveTrack control and battery telemetry are not included. Mac face tracking is a separate local feature; On presets require an already visible, receiving preview. Its confined direct-USB review does not qualify full-window or OBS tracking. Some motion features remain experimental. Read the compatibility and qualification notes for the exact release you install. Camera readback and completed requests do not establish physical arrival or immediate motor stop. Stop cancels further scheduling; a finite command already accepted by the camera may finish. Interrupted movement is never replayed.
 
 ## Updates and help
 
