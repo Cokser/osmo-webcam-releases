@@ -13,11 +13,12 @@ USB pan, tilt and zoom controls for Osmo Pocket 4 on Mac. Save the camera angles
 - Save up to twenty named pan/tilt/zoom presets per camera, with grid and list layouts.
 - Choose transitions and replace an ongoing recall with your next selection.
 - Use optional experimental Mac face tracking on the selected camera feed, including with Preview off, with an icon-led On/Off toggle and manual/preset priority. Save that tracking state in presets and preserve it through duplicate/export/import.
-- Choose four Speed levels for manual movement and tracking, with a three-second face recovery window. Higher levels require a compatible reviewed motion profile; requested pacing is not measured motor speed.
+- Record and replay 1–10 seconds of camera movement or build an automation from two to four presets. Each camera can store 20 automations.
+- Choose five pan/tilt Speed levels for manual movement and tracking, with a three-second face recovery window. Higher levels require a compatible reviewed motion profile; requested pacing is not measured motor speed.
 - Adjust pan, tilt and zoom together, press Escape to cancel in the app, and use guarded Recenter.
 - Hold W/A/S/D and Q/E/Z/X to move while the app is focused; use ↑/↓ for zoom and release to stop scheduling.
 - Choose preview quality and FPS from the source’s advertised modes, including native 4K where available. Preview off keeps those settings read-only while Ready controls remain available.
-- Use the companion Stream Deck plugin for automatic local pairing, an actual-preset dropdown and individual hold controls. HTTP integrations can use twenty preset slots; empty slots are no-ops.
+- Use the companion Stream Deck plugin for automatic local pairing, preset recall, saved automations, Mac tracking toggles and individual hold controls. HTTP integrations can use twenty preset slots; empty slots are no-ops.
 - Connect other local software through the optional HTTP preset bridge or API v1. The app’s Integrations page has instructions and copy buttons.
 - Keep presets and credentials on your Mac, without an app account or cloud preset storage.
 
